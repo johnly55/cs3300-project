@@ -11,34 +11,32 @@
     </div>
   <% end %>
 
-  <form>
-    <div class="field">
-      <%= form.label :title %>
-      <%= form.text_field :title, class:"form-control"%>
-    </div>
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title, class:"form-control"%>
+  </div>
 
-    <div class="field">
-      <%= form.label :description %>
-      <%= form.text_area :description, class:"form-control" %>
-    </div>
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description, class:"form-control" %>
+  </div>
 
-    <div class="field">
-      <%= form.label :qty %>
-      <%= form.number_field :qty, class:"form-control" %>
-    </div>
+  <div class="field">
+    <%= form.label :qty %>
+    <%= form.number_field :qty, class:"form-control" %>
+  </div>
 
-    <div class="field">
-      <%= form.label :qty_reserved %>
-      <%= form.number_field :qty_reserved, class:"form-control" %>
-    </div>
+  <div class="field">
+    <%= form.label :qty_reserved %>
+    <%= form.number_field :qty_reserved, class:"form-control" %>
+  </div>
 
-    <div class="field">
-      <%= form.label :image_link %>
-      <%= form.text_area :image_link, class:"form-control" %>
-    </div>
+  <div class="field">
+    <%= form.label :image_link %>
+    <%= form.text_area :image_link, class:"form-control" %>
+  </div>
 
-    <div class="actions">
-      <%= form.submit class:"btn btn-dark text-white"%>
-    </div>
-  </form>
+  <div class="actions">
+    <%= form.submit class:"btn btn-dark text-white"%>
+  </div>
 <% end %>
