@@ -1,6 +1,11 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
+  context "valid factory" do
+    it "has valid factory" do
+      expect(FactoryBot.build(:user)).to be_valid
+    end
+  end
   describe User do
     before do
       @user = FactoryBot.build(:user)

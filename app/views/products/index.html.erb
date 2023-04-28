@@ -27,6 +27,8 @@
             <%= link_to 'Edit', edit_product_path(product), class:"btn btn-secondary text-white" %>
             <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger text-white" %>
           </div>
+        <% else %>
+          <%= link_to 'Show', product, class:"btn btn-primary text-white" %>
         <% end %>
       </div>
     </div>
