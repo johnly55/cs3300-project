@@ -1,8 +1,10 @@
-<h1>Editing Product</h1>
+<div class="product-form"> 
+  <header>Editing Product</header>
 
-<%= render 'form', product: @product %>
+  <%= render 'form', product: @product %>
 
-<div class="btn-group">
-  <%= link_to 'Show', @product, class:"btn btn-primary text-white" %>
-  <%= link_to 'Back', products_path, class:"btn btn-secondary text-white" %>
+  <div class="btn-group">
+    <%= link_to 'Show', @product, class:"btn btn-primary text-white" %>
+    <%= link_to 'Back', products_path, class:"btn btn-secondary text-white" %>
+  </div>
 </div>

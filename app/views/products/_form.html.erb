@@ -32,9 +32,14 @@
   </div>
 
   <div class="field">
-    <%= form.label :image_link %>
-    <%= form.text_area :image_link, class:"form-control" %>
+    <%= form.label :image %>
+    <%= form.file_field :image, class:"form-control" %>
   </div>
+
+  <% if @product.image.attached? %>
+    <%= image_tag @product.image, style:"width:20rem; display:block;" %>
+  <% end %>
+  <br>
 
   <div class="actions">
     <%= form.submit class:"btn btn-dark text-white"%>

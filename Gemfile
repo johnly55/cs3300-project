@@ -27,6 +27,7 @@ gem 'jbuilder', '~> 2.7'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
+gem "font-awesome-sass", "~> 6.4.0"
 
 group :production do
   gem 'pg', '~> 0.21' # for Heroku deployment
