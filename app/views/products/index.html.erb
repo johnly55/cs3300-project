@@ -33,6 +33,9 @@
       </div>
     </div>
   <% end %>
-  <%= link_to 'New Product', new_product_path, class:"btn btn-dark text-white", style:"margin: 1rem" %>
+  <% if user_signed_in? %>
+    <%= link_to 'New Product', new_product_path, class:"btn btn-dark text-white", style:"margin: 1rem" %>  
+  </div>
+<% end %>
 </div>
 <br>
